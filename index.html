@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="cap.webp">
+</head>
+<body onload="generate()">
+    <h2 id="status" style="color: #ee7e6a;">Captcha Generator</h2>
+    <div id="wrapper"></div>
+    <div>
+        <input type="text" id="generated-captcha" readonly>
+    </div>
+    <div>
+        <input type="text" id="entered-captcha" placeholder="Enter the captcha...">
+    </div>
+    <button type="button" onclick="check()" >Check</button>
+    <button type="button" onclick="generate()" id="gen">Generate New</button>
+</body>
+<script src="index.js"></script>
+</html>
